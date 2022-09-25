@@ -3,16 +3,11 @@
 
 ### List of function in my basics lib
 
-| Name of the function | Link :link: |
-| ------ | ------ |
-| my_putchar | [test](libs/my/basics/my_putchar.c) |
-| my_strlen | [plugins/github/README.md][PlGh] |
-| my_putstr | [plugins/googledrive/README.md][PlGd] |
-| my_getnbr | [plugins/onedrive/README.md][PlOd] |
-|  | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+| Name of the function :link: | Description :information_source: | Parameters :wrench: | Is tested :chart_with_upwards_trend: | Flag :triangular_flag_on_post: |
+| ------ | ------ | ------ | ------ | ------ |
+| <p align="center"> [ my_putchar ]( libs/my/basics/my_putchar.c ) </p> | Print in stdout the char passed in parameter | <p align="center"> char c </p> | <p align="center"> :white_check_mark: </p> |
+| [ my_strlen ]( libs/my/basics/my_strlen.c ) | Return the length of the string passed in parameter | char *str | <p align="center">:white_check_mark:</p> |
+| [ my_putstr ]( libs/my/basics/my_putstr.c ) | Print in stdout the string passed in parameter | char *str | <p align="center">:white_check_mark:</p> |
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
