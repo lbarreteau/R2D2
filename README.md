@@ -5,7 +5,7 @@
 
 | Name of the function | Link :link: |
 | ------ | ------ |
-| my_putchar | [libs/my/basics/my_putchar.c][Plgh] |
+| my_putchar | [](libs/my/basics/my_putchar.c) |
 | my_strlen | [plugins/github/README.md][PlGh] |
 | my_putstr | [plugins/googledrive/README.md][PlGd] |
 | my_getnbr | [plugins/onedrive/README.md][PlOd] |
