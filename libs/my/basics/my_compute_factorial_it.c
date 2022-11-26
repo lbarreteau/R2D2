@@ -2,12 +2,12 @@
 ** EPITECH PROJECT, 2021
 ** My_compute_factorial_it
 ** File description:
-** This script returns the factorial of the number given as a parameter.
+** This function returns the factorial of the number given as a parameter.
 */
 
 #include "my_basics.h"
 
-int my_compute_factorial_it(int nb)
+ssize_t my_compute_factorial_it(int nb)
 {
     int result = nb;
 

@@ -14,10 +14,13 @@
 | [ my_put_nbr ]( libs/my/basics/my_put_nbr.c ) | This function display in stdout, numbers passed in parameter. | int nb | :white_check_mark: | :white_circle: |
 | [ my_swap ]( libs/my/basics/my_swap.c ) | This function swap two integers addresses in parameter. | int *a, int *b | :white_check_mark: | :white_circle: |
 | [ my_putstr ]( libs/my/basics/my_putstr.c ) | This function display characters of a string. | char const *str | :white_check_mark: | :white_circle: |
+| [ my_strlen ]( libs/my/basics/my_strlen.c ) | This function counts and returns the number of characters found. | char const *str | :white_check_mark: | :white_circle: |
+| [ my_evil_str ]( libs/my/basics/my_evil_str.c ) | This function return a pointer to the first character of the reversed string. | char *str | :white_check_mark: | :white_circle: |
+| [ my_getnbr ]( libs/my/basics/my_getnbr.c ) | This function find number of the character in the string. | char const *str | :white_check_mark: | :white_circle: |
+| [ my_compute_factorial_it ]( libs/my/basics/my_compute_factorial_it.c ) | This function returns the factorial of the number given as a parameter. | int nb | :white_check_mark: | :white_circle: |
+| [ my_compute_factorial_rec ]( libs/my/basics/my_compute_factorial_rec.c ) | This function returns the factorial of the number given as a parameter. | int nb | :white_check_mark: | :white_circle: |
 
-| [ my_strlen ]( libs/my/basics/my_strlen.c ) | Return the length of the string passed in parameter | char *str | :white_check_mark: | :white_circle: :large_blue_circle: |
-| [ my_putstr ]( libs/my/basics/my_putstr.c ) | Print in stdout the string passed in parameter | char *str | :white_check_mark: | :white_circle: |
-| [ my_getnbr ]( libs/my/basics/my_getnbr.c ) | returns the number found in the string as int | char *str | :white_check_mark: | :white_circle: :large_blue_circle: |
+
 
 ### Flag correspondence :
 

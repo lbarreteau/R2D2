@@ -16,7 +16,7 @@ ssize_t my_putstr(char const *str)
     size_str = my_strlen(str);
     return_value = write(1, str, size_str);
     if (return_value == -1) {
-        return (ERROR)
+        return (ERROR);
     }
     return (SUCCESS);
 }

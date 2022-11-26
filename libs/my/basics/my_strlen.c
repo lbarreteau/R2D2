@@ -2,12 +2,12 @@
 ** EPITECH PROJECT, 2021
 ** My_strlen
 ** File description:
-** This script counts and returns the number of characters found.
+** This function counts and returns the number of characters found.
 */
 
 #include "my_basics.h"
 
-int my_strlen(char const *str)
+ssize_t my_strlen(char const *str)
 {
     int size_str = 0;
 

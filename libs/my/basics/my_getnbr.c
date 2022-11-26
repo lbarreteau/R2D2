@@ -2,12 +2,12 @@
 ** EPITECH PROJECT, 2021
 ** My_getnbr
 ** File description:
-** This script find number of the character in the string.
+** This function find number of the character in the string.
 */
 
 #include "my_basics.h"
 
-static int check_operator(char const *str)
+static short check_operator(char const *str)
 {
     int is_negative = 0;
 
@@ -23,7 +23,7 @@ static int check_operator(char const *str)
     return (SUCCESS);
 }
 
-int my_getnbr(char const *str)
+ssize_t my_getnbr(char const *str)
 {
     int nb = 0;
 

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2021
 ** My_evil_str
 ** File description:
-** This scirpt should return a pointer to the first character
+** This function return a pointer to the first character
 ** of the reversed string.
 */
 
@@ -10,7 +10,7 @@
 
 char *my_evil_str(char *str)
 {
-    char c;
+    char c = ' ';
     int i = 0;
     int j = 0;
 

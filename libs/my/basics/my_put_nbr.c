@@ -32,7 +32,6 @@ static bool check_overflow(int nb)
 ssize_t my_put_nbr(int nb)
 {
     int reste = 0;
-    int check = ;
 
     if (check_overflow(nb) == true) {
         return (nb);
