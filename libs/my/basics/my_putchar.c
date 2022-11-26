@@ -2,12 +2,13 @@
 ** EPITECH PROJECT, 2021
 ** My_putchar
 ** File description:
-** This script displays the character transmitted by the char.
+** This function displays the character transmitted by parameter.
 */
 
-#include "my.h"
+#include <unistd.h>
+#include "my_basics.h"
 
-int my_putchar(char const c)
+ssize_t my_putchar(char const c)
 {
     write(1, &c, 1);
     return (SUCCESS);
