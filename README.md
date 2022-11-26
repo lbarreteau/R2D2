@@ -13,4 +13,3 @@
 ### Flag correspondence :
 
 :white_circle: - Chars/Strings | :large_blue_circle: - Numbers | :black_circle: - Memory allocation
-
