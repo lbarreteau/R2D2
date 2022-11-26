@@ -2,9 +2,10 @@
 ** EPITECH PROJECT, 2021
 ** My_put_nbr
 ** File description:
-** This script display numbers passed in parameter.
+** This function display in stdout, numbers passed in parameter.
 */
 
+#include <stdbool.h>
 #include "my_basics.h"
 
 static int is_negative(int nb)
@@ -12,29 +13,28 @@ static int is_negative(int nb)
     if (nb < 0) {
         my_putchar('-');
         return (nb * (-1));
-    } else {
-        return (nb);
     }
+    return (nb);
 }
 
-static int check_overflow(int nb)
+static bool check_overflow(int nb)
 {
     if (nb > 2147483647 || nb < (-2147483647 - 1)) {
-        return (1);
+        return (true);
     }
     if (nb == -2147483648) {
         my_putstr("-2147483648");
-        return (1);
+        return (true);
     }
-    return (SUCCESS);
+    return (false);
 }
 
-int my_put_nbr(int nb)
+ssize_t my_put_nbr(int nb)
 {
     int reste = 0;
-    int check = check_overflow(nb);
+    int check = ;
 
-    if (check == 1) {
+    if (check_overflow(nb) == true) {
         return (nb);
     }
     nb = is_negative(nb);

@@ -8,9 +8,9 @@
 #include <stdbool.h>
 #include "my_basics.h"
 
-bool my_isneg(int n)
+bool my_isneg(int nb)
 {
-    if (n >= 0) {
+    if (nb >= 0) {
         return (true);
     } else {
         return (false);

@@ -2,16 +2,21 @@
 ** EPITECH PROJECT, 2021
 ** My_putstr
 ** File description:
-** This script display one-by-one characters of a string.
+** This function display characters of a string.
 */
 
+#include <unistd.h>
 #include "my_basics.h"
 
-int my_putstr(char const *str)
+ssize_t my_putstr(char const *str)
 {
     int size_str = 0;
+    int return_value = 0;
 
     size_str = my_strlen(str);
-    write(1, str, size_str);
+    return_value = write(1, str, size_str);
+    if (return_value == -1) {
+        return (ERROR)
+    }
     return (SUCCESS);
 }

@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2021
 ** My_swap
 ** File description:
-** This script swap two integers with addresses in parameter.
+** This function swap two integers addresses in parameter.
 */
 
 #include "my_basics.h"
