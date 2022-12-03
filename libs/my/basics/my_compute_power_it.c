@@ -2,13 +2,13 @@
 ** EPITECH PROJECT, 2021
 ** My_compute_power_it
 ** File description:
-** This script returns the first argument raised to the power p,
+** This function returns the first argument raised to the power p,
 ** where p is the second argument.
 */
 
 #include "my_basics.h"
 
-int my_compute_power_it(int nb, int p)
+ssize_t my_compute_power_it(int nb, int p)
 {
     int result = 1;
 

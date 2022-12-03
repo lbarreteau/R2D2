@@ -15,7 +15,7 @@ OBJ				=	$(SRC:%.c=%.o) $(SRC_MAIN:%.c=%.o)
 
 OBJ_UNITTEST	=	$(SRC:%.c=%.o) $(SRC_UNITTEST:%.c=%.o)
 
-NAME   			=	z
+NAME   			=	menger
 
 UNIT_TEST		=	unit_tests
 

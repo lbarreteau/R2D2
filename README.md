@@ -19,7 +19,8 @@
 | [ my_getnbr ]( libs/my/basics/my_getnbr.c ) | This function find number of the character in the string. | char const *str | :white_check_mark: | :white_circle: |
 | [ my_compute_factorial_it ]( libs/my/basics/my_compute_factorial_it.c ) | This function returns the factorial of the number given as a parameter. | int nb | :white_check_mark: | :white_circle: |
 | [ my_compute_factorial_rec ]( libs/my/basics/my_compute_factorial_rec.c ) | This function returns the factorial of the number given as a parameter. | int nb | :white_check_mark: | :white_circle: |
-
+| [ my_compute_power_it ]( libs/my/basics/my_compute_power_it.c ) | This function returns the first argument raised to the power p, where p is the second argument. | int nb, int p | :white_check_mark: | :white_circle: |
+| [ my_compute_power_rec ]( libs/my/basics/my_compute_power_rec.c ) | This function returns the first argument raised to the power p, where p is the second argument. | int nb, int p | :white_check_mark: | :white_circle: |
 
 
 ### Flag correspondence :

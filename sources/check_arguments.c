@@ -39,7 +39,7 @@ static bool check_if_is_multiple_of_3(char *str)
     return (false);
 }
 
-bool check_arguments(int ac, char **av)
+bool arguments_are_good(int ac, char **av)
 {
     if (check_nb_of_arguments(ac) == false) {
         return (false);
