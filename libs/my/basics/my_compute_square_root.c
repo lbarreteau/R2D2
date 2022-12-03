@@ -2,12 +2,12 @@
 ** EPITECH PROJECT, 2021
 ** My_compute_square_root
 ** File description:
-** This script returns the square root of the number given as argument.
+** This function returns the square root of the number given as argument.
 */
 
 #include "my_basics.h"
 
-int my_compute_square_root(int nb)
+ssize_t my_compute_square_root(int nb)
 {
     int i = 1;
     int end_i = 0;
@@ -17,10 +17,10 @@ int my_compute_square_root(int nb)
         if (end_i == nb) {
             return (i);
         } else if (i > 46340) {
-            return (0);
+            return (ERROR);
         } else {
             i++;
         }
     }
-    return (0);
+    return (ERROR);
 }
