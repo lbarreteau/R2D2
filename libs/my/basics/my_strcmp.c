@@ -2,10 +2,13 @@
 ** EPITECH PROJECT, 2021
 ** My_strcmp
 ** File description:
-** to complete.
+** This function compares two strings and returns the difference between the
+** first different characters.
 */
 
-int my_strcmp(char *s1, char *s2)
+#include "my_basics.h"
+
+ssize_t my_strcmp(char *s1, char *s2)
 {
     int i = 0;
 

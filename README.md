@@ -24,9 +24,12 @@
 | [ my_compute_square_root ]( libs/my/basics/my_compute_square_root.c ) | This function returns the square root of the number given as argument. | int nb | :white_check_mark: | :white_circle: |
 | [ my_is_prime ]( libs/my/basics/my_is_prime.c ) | This function returns true if the number is prime or false if not. | int nb | :white_check_mark: | :white_circle: |
 | [ my_find_prime_sup ]( libs/my/basics/my_find_prime_sup.c ) | This function returns the smallest prime number that is greater than, or equal to, the number given as a parameter. | int nb | :white_check_mark: | :white_circle: |
-| [ My_strcpy ]( libs/my/basics/my_strcpy.c ) | This function make a copy from a string into another and return it. | int nb | :white_check_mark: | :white_circle: |
-| [ My_strncpy ]( libs/my/basics/my_strncpy.c ) | This function copy the string src in the string dest with the old string. | int nb | :white_check_mark: | :white_circle: |
-| [ My_revstr ]( libs/my/basics/my_revstr.c ) | This function reverse the string and return it. | int nb | :white_check_mark: | :white_circle: |
+| [ My_strcpy ]( libs/my/basics/my_strcpy.c ) | This function make a copy from a string into another and return it. | char *dest, char const *src | :white_check_mark: | :white_circle: |
+| [ My_strncpy ]( libs/my/basics/my_strncpy.c ) | This function copy the string at n position in src in the string dest with the old string. | char *dest, char const *src, int n | :white_check_mark: | :white_circle: |
+| [ My_revstr ]( libs/my/basics/my_revstr.c ) | This function reverse the string and return it. | char *str | :white_check_mark: | :white_circle: |
+| [ My_strcmp ]( libs/my/basics/my_strcmp.c ) | This function compares two strings and returns the difference between the first different characters. | char *str1, char *str2 | :white_check_mark: | :white_circle: |
+| [ My_strncmp ]( libs/my/basics/my_strncmp.c ) | This function compares two strings at n position and returns the difference between the first different characters. | char *str1, char *str2, int n | :white_check_mark: | :white_circle: |
+| [ My_strstr ]( libs/my/basics/my_strstr.c ) | This function returns a pointer to the first occurrence in haystack of any of the entire sequence of characters specified in needle, or a null pointer if the sequence is not present in haystack. | char *str, char const *to_find | :white_check_mark: | :white_circle: |
 
 ### Flag correspondence :
 

@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2021
 ** My_strncpy
 ** File description:
-** This function copy the string src in the string dest with the old string.
+** This function copy the string at n position in src in the string dest with
+** the old string.
 */
 
 #include "my_basics.h"
