@@ -2,7 +2,8 @@
 ** EPITECH PROJECT, 2022
 ** Mem_alloc_2d_array
 ** File description:
-** This function malloc an x * y array
+** This function malloc an 2d array with the number of rows and columns
+** passed in parameter.
 */
 
 #include "my_basics.h"

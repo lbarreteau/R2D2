@@ -43,5 +43,7 @@ ssize_t my_strncmp(char const *s1, char const *s2, int n);
 ssize_t my_strstr(char *str, char const *to_find);
 char *my_strlowcase(char *str);
 char *my_strupcase(char *str);
+char **mem_alloc_2d_array(int nb_rows , int nb_cols);
 char **my_str_to_word_array(char const *str);
 char *my_strdup(char const *src);
+void my_show_array(char **array);

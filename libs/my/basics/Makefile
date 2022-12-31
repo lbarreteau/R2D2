@@ -35,7 +35,10 @@ SRC		=	my_putchar.c 				\
 			my_strncmp.c				\
 			my_str_to_word_array.c		\
 			my_strupcase.c				\
-			my_strlowcase.c
+			my_strlowcase.c				\
+			my_strdup.c					\
+			mem_alloc_2d_array.c		\
+			my_show_array.c
 
 OBJ		=	$(SRC:%.c=%.o)
 

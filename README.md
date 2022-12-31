@@ -32,6 +32,9 @@
 | [ My_strstr ]( libs/my/basics/my_strstr.c ) | This function returns a pointer to the first occurrence in haystack of any of the entire sequence of characters specified in needle, or a null pointer if the sequence is not present in haystack. | char *str, char const *to_find | :white_check_mark: | :white_circle: |
 | [ My_strlowcase ]( libs/my/basics/my_strlowcase.c ) | This function transform the string in lower case string. | char *str | :white_check_mark: | :white_circle: |
 | [ My_strupcase ]( libs/my/basics/my_strupcase.c ) | This function transform the string in upper case string. | char *str | :white_check_mark: | :white_circle: |
+| [ My_strdup ]( libs/my/basics/my_strdup.c ) | This function malloc a string passed in parameter and return it. | char const *str | :white_check_mark: | :white_circle: |
+| [ Mem_alloc_2d_array ]( libs/my/basics/mem_alloc_2d_array.c ) | This function malloc an 2d array with the number of rows and columns passed in parameter. | int nb_rows , int nb_cols | :white_check_mark: | :white_circle: |
+| [ My_str_to_word_array ]( libs/my/basics/my_str_to_word_array.c ) | This function splits a string into words in a 2d array. | char const *str | :white_check_mark: | :white_circle: |
 
 ### Flag correspondence :
 

@@ -1,29 +1,12 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_str_to_word_array
+** My_str_to_word_array
 ** File description:
-** str to word
+** This function splits a string into words in a 2d array.
 */
 
 #include <stdlib.h>
-
-int my_strlen(char const *str);
-int my_putchar(char c);
-
-char *my_strdup(char const *src)
-{
-    int len = my_strlen(src);
-    char *str = malloc(sizeof(char) * (len + 1));
-    int i = 0;
-
-    if (str == NULL) {
-        return (NULL);
-    }
-    for (; i < len; i++)
-        str[i] = src[i];
-    str[i] = '\0';
-    return (str);
-}
+#include "my_basics.h"
 
 static int check_alphanum(char const c)
 {
