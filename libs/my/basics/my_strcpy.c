@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2021
 ** My_strcpy
 ** File description:
-** This script copies a string into another and return it.
+** This function make a copy from a string into another and return it.
 */
 
 #include "my_basics.h"

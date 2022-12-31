@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2021
 ** My_revstr
 ** File description:
-** This script reverse the string and return it.
+** This function reverse the string and return it.
 */
 
 #include "my_basics.h"
