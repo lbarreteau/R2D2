@@ -30,6 +30,8 @@
 | [ My_strcmp ]( libs/my/basics/my_strcmp.c ) | This function compares two strings and returns the difference between the first different characters. | char *str1, char *str2 | :white_check_mark: | :white_circle: |
 | [ My_strncmp ]( libs/my/basics/my_strncmp.c ) | This function compares two strings at n position and returns the difference between the first different characters. | char *str1, char *str2, int n | :white_check_mark: | :white_circle: |
 | [ My_strstr ]( libs/my/basics/my_strstr.c ) | This function returns a pointer to the first occurrence in haystack of any of the entire sequence of characters specified in needle, or a null pointer if the sequence is not present in haystack. | char *str, char const *to_find | :white_check_mark: | :white_circle: |
+| [ My_strlowcase ]( libs/my/basics/my_strlowcase.c ) | This function transform the string in lower case string. | char *str | :white_check_mark: | :white_circle: |
+| [ My_strupcase ]( libs/my/basics/my_strupcase.c ) | This function transform the string in upper case string. | char *str | :white_check_mark: | :white_circle: |
 
 ### Flag correspondence :
 

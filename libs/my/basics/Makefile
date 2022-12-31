@@ -33,7 +33,9 @@ SRC		=	my_putchar.c 				\
 			my_strstr.c 				\
 			my_strlowcase.c				\
 			my_strncmp.c				\
-			my_str_to_word_array.c
+			my_str_to_word_array.c		\
+			my_strupcase.c				\
+			my_strlowcase.c
 
 OBJ		=	$(SRC:%.c=%.o)
 
