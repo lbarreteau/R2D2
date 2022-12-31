@@ -23,7 +23,6 @@ SRC		=	my_putchar.c 				\
 			my_compute_power_it.c 		\
 			my_compute_power_rec.c 		\
 			my_compute_square_root.c 	\
-			mem_alloc_2d_array.c		\
 			my_is_prime.c 				\
 			my_find_prime_sup.c 		\
 			my_strcpy.c 				\
@@ -33,13 +32,9 @@ SRC		=	my_putchar.c 				\
 			my_strstr.c 				\
 			my_strlowcase.c				\
 			my_strncmp.c				\
-			my_str_to_word_array.c		\
 			my_strupcase.c				\
 			my_strlowcase.c				\
-			my_strdup.c					\
-			mem_alloc_2d_array.c		\
-			my_show_array.c
-
+			my_strdup.c
 OBJ		=	$(SRC:%.c=%.o)
 
 CC		=	gcc

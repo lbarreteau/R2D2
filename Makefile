@@ -33,6 +33,7 @@ make_lib:
 	make -C libs/my/basics/
 	make -C libs/my/printf/
 	make -C libs/my/linked_list/
+	make -C libs/my/array/
 
 $(NAME): 	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LDFLAGS)
@@ -55,11 +56,13 @@ clean_lib:
 	make -C libs/my/basics/ clean
 	make -C libs/my/printf/ clean
 	make -C libs/my/linked_list/ clean
+	make -C libs/my/array/ clean
 
 fclean_lib:
 	make -C libs/my/basics/ fclean
 	make -C libs/my/printf/ fclean
 	make -C libs/my/linked_list/ fclean
+	make -C libs/my/array/ fclean
 
 re:			fclean all
 
