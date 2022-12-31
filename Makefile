@@ -32,6 +32,7 @@ all:		make_lib $(NAME)
 make_lib:
 	make -C libs/my/basics/
 	make -C libs/my/printf/
+	make -C libs/my/linked_list/
 
 $(NAME): 	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LDFLAGS)
@@ -53,10 +54,12 @@ fclean: 	clean fclean_lib
 clean_lib:
 	make -C libs/my/basics/ clean
 	make -C libs/my/printf/ clean
+	make -C libs/my/linked_list/ clean
 
 fclean_lib:
 	make -C libs/my/basics/ fclean
 	make -C libs/my/printf/ fclean
+	make -C libs/my/linked_list/ fclean
 
 re:			fclean all
 

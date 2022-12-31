@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2021
-** Printf.h
+** My_printf.h
 ** File description:
-** libmy.a in this file
+** libmyprintf.a in this file
 */
 
 #pragma once

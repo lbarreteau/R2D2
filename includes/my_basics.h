@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_basics.h
+** My_basics.h
 ** File description:
-** libmy.a in this file
+** libmybasics.a in this file
 */
 
 #pragma once
