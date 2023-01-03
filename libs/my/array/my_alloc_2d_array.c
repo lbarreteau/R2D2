@@ -8,7 +8,7 @@
 
 #include "my_basics.h"
 
-char **mem_alloc_2d_array(int nb_rows , int nb_cols)
+char **my_alloc_2d_array(int nb_rows , int nb_cols)
 {
     char **buffer = malloc(sizeof(char *) * (nb_rows + 1));
     int i = 0;

@@ -10,7 +10,7 @@
 
 bool my_isneg(int nb)
 {
-    if (nb >= 0) {
+    if (nb < 0) {
         return (true);
     } else {
         return (false);

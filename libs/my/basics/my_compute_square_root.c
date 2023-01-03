@@ -16,7 +16,8 @@ ssize_t my_compute_square_root(int nb)
         end_i = i * i;
         if (end_i == nb) {
             return (i);
-        } else if (i > 46340) {
+        }
+        if (i > 46340) {
             return (ERROR);
         } else {
             i++;

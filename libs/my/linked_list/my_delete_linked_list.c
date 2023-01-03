@@ -8,7 +8,8 @@
 #include <stdlib.h>
 #include "my_linked_list.h"
 
-void my_delete_linked_list(struct s_node *list) {
+void my_delete_linked_list(struct s_node *list)
+{
     if (list == NULL) {
         return;
     }

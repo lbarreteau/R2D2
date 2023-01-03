@@ -30,11 +30,11 @@ SRC		=	my_putchar.c 				\
 			my_revstr.c					\
 			my_strcmp.c					\
 			my_strstr.c 				\
-			my_strlowcase.c				\
 			my_strncmp.c				\
 			my_strupcase.c				\
 			my_strlowcase.c				\
 			my_strdup.c
+
 OBJ		=	$(SRC:%.c=%.o)
 
 CC		=	gcc

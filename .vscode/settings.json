@@ -1,7 +1,0 @@
-{
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.associations": {
-        "my_basics.h": "c",
-        "my_linked_list.h": "c"
-    }
-}

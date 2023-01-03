@@ -7,7 +7,7 @@
 
 SRC_MAIN		=	sources/main.c
 
-SRC				=	sources/check_arguments.c
+SRC				=
 
 SRC_UNITTEST   	=	tests/test_project.c
 
@@ -23,7 +23,7 @@ CC				=	gcc
 
 CFLAGS			+=	-std=gnu11 -Wall -Wextra -Wshadow -I./includes
 
-LDFLAGS 		+=	-L./libs/my/printf -lmyprintf -L./libs/my/basics -lmybasics
+LDFLAGS 		+=	-L./libs/my/linked_list -lmylinkedlist -L./libs/my/array -lmyarray -L./libs/my/printf -lmyprintf -L./libs/my/basics -lmybasics
 
 TESTFLAGS		+=	--coverage -lcriterion -I./includes
 
@@ -39,16 +39,18 @@ $(NAME): 	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CFLAGS) $(LDFLAGS)
 
 tests_run:	make_lib
-	$(RM) *.gc*
-	$(CC) -o $(UNIT_TEST) $(SRC) $(SRC_UNITTEST) $(LDFLAGS) $(TESTFLAGS)
+	make -C tests/
 	./$(UNIT_TEST)
 	gcovr
+
+tests_coding_style:
+	make -C tests/ tests_coding_style
 
 clean: 		clean_lib
 	$(RM) $(OBJ)
 	$(RM) *.gc*
 
-fclean: 	clean fclean_lib
+fclean: 	clean clean_tests fclean_lib fclean_tests
 	$(RM) $(NAME)
 	$(RM) $(UNIT_TEST)
 
@@ -58,11 +60,17 @@ clean_lib:
 	make -C libs/my/linked_list/ clean
 	make -C libs/my/array/ clean
 
+clean_tests:
+	make -C tests/ clean
+
 fclean_lib:
 	make -C libs/my/basics/ fclean
 	make -C libs/my/printf/ fclean
 	make -C libs/my/linked_list/ fclean
 	make -C libs/my/array/ fclean
+
+fclean_tests:
+	make -C tests/ fclean
 
 re:			fclean all
 

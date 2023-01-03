@@ -10,7 +10,7 @@
 
 static int check_alphanum(char const c)
 {
-    if (c == '\n')
+    if (c == '\n' || c == '\t' || c == ' ' || c == '\0')
         return (-1);
     else
         return (1);

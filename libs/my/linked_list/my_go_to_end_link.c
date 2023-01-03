@@ -8,7 +8,8 @@
 #include <stddef.h>
 #include "my_linked_list.h"
 
-struct s_node *my_go_to_end_link(struct s_node *list) {
+struct s_node *my_go_to_end_link(struct s_node *list)
+{
     if (list == NULL) {
         return NULL;
     }

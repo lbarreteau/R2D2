@@ -5,7 +5,7 @@
 ## This script is the default libmy basics Makefile.
 ##
 
-SRC		=	mem_alloc_2d_array.c		\
+SRC		=	my_alloc_2d_array.c		\
 			my_str_to_word_array.c		\
 			my_show_array.c
 
@@ -13,7 +13,7 @@ OBJ		=	$(SRC:%.c=%.o)
 
 CC		=	gcc
 
-NAME	=	libmybasics.a
+NAME	=	libmyarray.a
 
 CFLAGS	+=	-Wall -Wextra -Wshadow -Werror -I../../../includes
 
