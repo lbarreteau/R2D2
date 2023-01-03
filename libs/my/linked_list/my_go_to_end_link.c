@@ -11,10 +11,10 @@
 struct s_node *my_go_to_end_link(struct s_node *list)
 {
     if (list == NULL) {
-        return NULL;
+        return (NULL);
     }
-    if (list->next == NULL) {
-        return list;
+    while (list->next != NULL) {
+        list = list->next;
     }
-    return my_go_to_end_link(list->next);
+    return (list);
 }

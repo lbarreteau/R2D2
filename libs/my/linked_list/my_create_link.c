@@ -9,10 +9,21 @@
 #include <stdlib.h>
 #include "my_linked_list.h"
 
-struct s_node *my_create_link(void *item)
+struct s_node *my_create_link(struct s_node *list, void *item)
 {
-    struct s_node *node = malloc(sizeof(struct s_node));
-    node->item = item;
-    node->next = NULL;
-    return node;
+    struct s_node *new_link = malloc(sizeof(struct s_node));
+
+    if (new_link == NULL) {
+        return (NULL);
+    }
+    new_link->item = item;
+    new_link->next = NULL;
+    if (list == NULL) {
+        return (new_link);
+    }
+    while (list->next != NULL) {
+        list = list->next;
+    }
+    list->next = new_link;
+    return (new_link);
 }

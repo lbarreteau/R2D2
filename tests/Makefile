@@ -35,13 +35,39 @@ SRC_BASICS	=	../libs/my/basics/my_putchar.c 					\
 				../libs/my/basics/my_strlowcase.c				\
 				../libs/my/basics/my_strdup.c
 
-SRC_ARRAY	=	../libs/my/array/my__alloc_2d_array.c		\
+SRC_ARRAY	=	../libs/my/array/my_alloc_2d_array.c		\
 				../libs/my/array/my_str_to_word_array.c		\
 				../libs/my/array/my_show_array.c
 
-SRC_UNITTEST   	=	test_myarray.c
+SRC_PRINTF 	=	../libs/my/printf/percent_b.c 			\
+				../libs/my/printf/percent_c.c 			\
+				../libs/my/printf/percent_d.c 			\
+				../libs/my/printf/percent_long_d.c 		\
+				../libs/my/printf/percent_maj_x.c 		\
+				../libs/my/printf/percent_s.c 			\
+				../libs/my/printf/percent_u.c 			\
+				../libs/my/printf/percent_x.c 			\
+				../libs/my/printf/percent_o.c 			\
+				../libs/my/printf/percent_percent.c 	\
+				../libs/my/printf/redirect.c 			\
+				../libs/my/printf/redirect_other.c 		\
+				../libs/my/printf/search.c 				\
+				../libs/my/printf/my_printf.c
 
-OBJ_UNITTEST	=	$(SRC_BASICS:%.c=%.o) $(SRC_ARRAY:%.c=%.o) $(SRC_UNITTEST:%.c=%.o)
+SRC_LINKED_LIST	=	../libs/my/linked_list/my_create_linked_list.c		\
+					../libs/my/linked_list/my_delete_linked_list.c		\
+					../libs/my/linked_list/my_create_link.c				\
+					../libs/my/linked_list/my_go_to_end_link.c			\
+					../libs/my/linked_list/my_count_links.c				\
+					../libs/my/linked_list/my_print_linked_list.c		\
+					../libs/my/linked_list/my_delete_link.c
+
+SRC_UNITTEST   	=	test_mybasics.c		\
+					test_myarray.c		\
+					test_myprintf.c		\
+					test_mylinked_list.c
+
+OBJ_UNITTEST	=	$(SRC_BASICS:%.c=%.o) $(SRC_ARRAY:%.c=%.o) $(SRC_PRINTF:%.c=%.o) $(SRC_LINKED_LIST:%.c=%.o) $(SRC_UNITTEST:%.c=%.o)
 
 UNIT_TEST		=	unit_tests
 
@@ -63,7 +89,7 @@ make_lib:
 
 tests_run:	make_lib
 	$(RM) *.gc*
-	$(CC) -o $(UNIT_TEST) $(SRC) $(SRC_UNITTEST) $(LDFLAGS) $(TESTFLAGS)
+	$(CC) -o $(UNIT_TEST) $(SRC_BASICS) $(SRC_ARRAY) $(SRC_PRINTF) $(SRC_LINKED_LIST) $(SRC_UNITTEST) $(LDFLAGS) $(TESTFLAGS)
 	cp $(UNIT_TEST) ../$(UNIT_TEST)
 
 tests_coding_style: fclean

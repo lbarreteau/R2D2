@@ -10,8 +10,12 @@
 
 struct s_node *my_create_linked_list(void)
 {
-    struct s_node *list = malloc(sizeof(struct s_node));
-    list->item = NULL;
-    list->next = NULL;
-    return list;
+    struct s_node *new_link = malloc(sizeof(struct s_node));
+
+    if (new_link == NULL) {
+        return (NULL);
+    }
+    new_link->item = NULL;
+    new_link->next = NULL;
+    return (new_link);
 }
